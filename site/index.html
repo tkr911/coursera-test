@@ -5,10 +5,10 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<h1>Main Heading</h1> All the other headings are meant to be under this heading. 
+	<h1 id="targetid">Main Heading</h1> All the other headings are meant to be under this heading. 
 	<h2>Sub Heading2</h2>
-	<h3>Sub Heading3></h3>
-	<h4>Sub Heading4</h4>
+	<h3>Sub Heading3>	<h4>Sub Heading4</h4 
+	></h3>
 	<h5>Sub Heading5</h5>	
 	<h6>Sub Heading6</h6>
 
@@ -24,6 +24,17 @@
 		</li>
 	</ul>
 
-	<img src="http://lorempixel.com/output/nature-q-c-640-480-1.jpg" width="640" height="480">
+	<div><a href="#targetid">Link to jump to main heading</a>
+	</div>
+
+	<img src="http://lorempixel.com/output/nature-q-c-640-480-1.jpg" width="320" height="240">
+
+	<h2>Some clickable image using &lt;div&gt;</h2>
+	Clickable so must be &lt;a&gt; sort of tag
+	Want the contents of the &lt;a&gt; tag to be an image, not text. Since the &lt;a&gt; element can act as a block element too, can therefore embed a &lt;div&gt; tag within the contents of the &lt;a&gt; tag. The &lt;div&gt; tag can then be used to encompass the img tag making it clickable
+
+	<!-- Making a clickable image by using a <div> tag in the content of the <a> tag so as to hold am <img> tag -->
+	<a href="#targetid"><div><img src="http://lorempixel.com/output/nature-q-c-640-480-1.jpg" width="320" height="240"></div>Click here too</a>
+
 </body>
 </html>
